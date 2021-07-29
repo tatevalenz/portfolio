@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/60e24c2f9c.js" crossorigin="anonymous"></script>
+    <title>Portfolio</title>
+</head>
+
+<body>
+
+    <header>
+
+        <button id="menu">
+            <i class="fas fa-bars" id="open-menu"></i>
+            <i class="fas fa-times" id="close-menu"></i>
+        </button>
+        <nav>
+            <ul class="menu">
+                <li class="menu-item"><a href="#quienSoy">Quien Soy</a></li>
+                <li class="menu-item"><a href="#skills">Skills</a></li>
+                <li class="menu-item"><a href="#portfolio">Portfolio</a></li>
+                <li class="menu-item"><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <main class="contenedor">
+        <section>
+
+            <h2 id="#quienSoy">Quien Soy</h1>
+                <article class="quienSoy">
+
+                    <figure>
+                        <img src="./img/ian.jpg" alt="">
+                    </figure>
+
+
+                    <p>Hola Soy Ian Valenzuela, Actualmente me encuentro Estudiando la Tecnicatura de Programacion de
+                        Computadoras en la Universidad Nacional de Lomas de Zamora, complemento el estudio haciendo
+                        varios cursos para poder encontrar una salida laboral mas rapida.
+                    </p>
+
+                </article>
+
+
+        </section>
+        <hr>
+        <section class="contenedor-icono">
+            <h2 id="skills">Skills</h2>
+            <ul class="menu-icono">
+                <li><i class="fab fa-html5"></i>
+                    <p>HTML5</p>
+                    <p>100%</p>
+                </li>
+                <li><i class="fab fa-css3-alt"></i>
+                    <p>CSS3</p>
+                    <p>70%</p>
+                </li>
+                <li><i class="fab fa-js-square"></i>
+                    <p>JAVASCRIPT</p>
+                    <p>1%</p>
+                </li>
+            </ul>
+            <h3>Proximamente...</h3>
+            <ul class="menu-icono-prox">
+                <li><i class="fab fa-react"></i>
+                    <p>REACT</p>
+                </li>
+                <li><i class="fab fa-php"></i>
+                    <p>PHP</p>
+                </li>
+                <li><i class="fab fa-java"></i>
+                    <p>JAVA</p>
+                </li>
+            </ul>
+        </section>
+        <hr>
+
+        <section>
+            <h2 id="#portfolio">Portfolio</h2>
+            <ul class="menu-portfolio">
+                <li class="lista-portfolio"><iframe src="https://open.spotify.com/embed/playlist/37i9dQZEVXbMMy2roB9myp"
+                        width="100%" height="380" frameBorder="0" allowtransparency="true"
+                        allow="encrypted-media"></iframe></li>
+                <li class="lista-portfolio"><img src="./img/series.jpg" alt=""></li>
+                <li class="lista-portfolio"><img src="./img/play.jpg" alt=""></li>
+            </ul>
+        </section>
+
+        <section class="contacto">
+            <h2 id="contacto">Contacto</h2>
+            <form action="">
+
+                <label for=""></label>
+                <input class="contacto-input" type="text" name="nombre" id="" placeholder="Ingresa tu Nombre">
+                <input class="contacto-input" type="text" name="apellido" id="" placeholder="Ingresa tu Apellido">
+
+                <input class="contacto-input" type="email" name="email" id="" placeholder="Ingresa tu email">
+
+                <textarea class="contacto-input" name="consulta" id="" cols="30" rows="5"
+                    placeholder="Deja tu consulta"></textarea>
+            </form>
+        </section>
+        <footer>
+            <nav>
+                <ul class="menu-footer">
+                    <li class="menu-footer-item"><a href="https://www.instagram.com/ian_tate1/"><i
+                                class="fab fa-instagram"></i></a></li>
+                    <li class="menu-footer-item"><a href="https://twitter.com/Ian_Valenzuela1"><i
+                                class="fab fa-twitter"></i></a></li>
+                    <li class="menu-footer-item"> <i class="fas fa-envelope"></i></li>
+                </ul>
+            </nav>
+        </footer>
+    </main>
+
+    <script src="./js/index.js"></script>
+</body>
+
+</html>
