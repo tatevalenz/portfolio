@@ -2,7 +2,7 @@
   
    list-style: none;
    margin: 0;
-   font-family: 'Baloo 2', cursive;
+ 
    box-sizing: border-box;
    padding: 0;
    text-decoration: none;
@@ -17,6 +17,7 @@
 }
 body{
     background-color: #053742;
+    font-family: 'Baloo 2', cursive;
 }
 body.menu-mobile-active{
     overflow: hidden;
@@ -70,7 +71,7 @@ h2::after{
     bottom: -8%;
     left: 50%;
     transform: translateX(-50%);
-    transition: 0.8s ease-in;
+    transition: 0.3s ease-in;
 }
 h2:hover::after{
     width: 15%;
@@ -126,7 +127,9 @@ body.menu-mobile-active nav .menu{
     border-radius: 15px;
     
 }
-
+section{
+    padding: 20px;
+}
 
 @media (min-width: 768px) {
     
@@ -135,6 +138,9 @@ body.menu-mobile-active nav .menu{
     }
     #menu{
         display: none;
+    }
+    section{
+        padding: 40px;
     }
     nav {
     display: block;
@@ -177,12 +183,23 @@ body.menu-mobile-active nav .menu{
     }
     .menu-portfolio{
       display: flex;
-      
+      flex-wrap: wrap; 
+      justify-content: center;
     }
+    .contacto form{
+        width: 60%;
+    }
+
+}
+
+.contenedor-icono{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .quienSoy {
     margin-top: 20px;
-    margin-left: 5vh;
+padding: 20px;
 }
 .quienSoy figure img{
     width: 50vh;
@@ -190,7 +207,7 @@ body.menu-mobile-active nav .menu{
     margin-left: -50px;
 }
 .quienSoy p{
-    font-size: 30px;
+    font-size: 20px;
     margin-top: 20px;
     color: #E8F0F2;
 }
@@ -199,12 +216,16 @@ body.menu-mobile-active nav .menu{
 
 .menu-icono{ 
     margin-top: 20px;
-    margin-left: 25px;
+   padding: 20px;
+   text-align: center;
 }  
 
 .menu-icono li{
-    width: 35vh;
+    flex: 1;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .menu-icono li i{
     font-size: 8rem;
@@ -213,6 +234,7 @@ body.menu-mobile-active nav .menu{
     border-radius: 30%;
     border: 3px #A2DBFA solid;
     margin-top: 25px;
+    
 }
 .menu-icono li p{
     font-size: 25px;
@@ -221,7 +243,8 @@ body.menu-mobile-active nav .menu{
     background-color: #E8F0F2;
     border-radius: 20px;
     text-align: center;
-  width: 35vh;
+    max-width: 200px;
+ width: 100%;
 }
 .contenedor{
     width: 100%;
@@ -231,58 +254,33 @@ body.menu-mobile-active nav .menu{
     text-align: center;
 }
 /*Menu icono */
-.menu-icono-prox{
-    margin-top: 20px;
-    margin-left: 25px;
-    margin-bottom: 15px;
-}
-.menu-icono-prox li{
-    width: 35vh;
-    margin: auto;
-}
-
-.menu-icono-prox li i{
-    font-size: 8rem;
-    padding: 50px;
-    background-color: #39A2DB;
-    border-radius: 30%;
-    border: 3px #A2DBFA solid;
-    margin-top: 25px;
-    margin-right: 15px;
-}
-.menu-icono-prox li p{
-    font-size: 20px;
-    border: solid 3px #A2DBFA;
-    margin-top: 15px;
-    margin-left: 15px;
-    background-color: #E8F0F2;
-    border-radius: 20px;
-    text-align: center;
-    width: 30vh;
-}
 
 
 
 
-.lista-portfolio img{
-    width: 100%;
+li.lista-portfolio{
     margin: 15px;
 }
+
 .contacto form{
     
-  
+  width: 100%;
     margin: auto;
     margin-top: 15px;
 }
 .contacto-input{
     background-color: #E8F0F2;
-    width: 90%;
-    margin-left: 30px;
+    width: 100%;
+   
     margin-right: 0;
     padding: 15px;
     margin-bottom: 5px;
     border: #39A2DB 3px solid;
     color: #000;
+}
+.contacto label{
+    display: block;
+    opacity: 0;
 }
 
 .menu-footer{
